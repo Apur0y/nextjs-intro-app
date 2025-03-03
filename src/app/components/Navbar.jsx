@@ -24,13 +24,14 @@ const Navbar = () => {
                     <Link href='/about'>
                     <li>About</li>
                     </Link>
+                    <Link href='/meals'>
+                    <li>Meals</li>
+                    </Link>
                 
                     
                 </ul>
                 <div className='navbar-end ml-4'>
-                <Link href="/login">
-                Login
-                </Link>                
+                               
                 </div>
             </div>
         );

@@ -25,6 +25,7 @@ const page = async({searchParams}) => {
          <div className='grid grid-cols-4 gap-5'>
             {
                 meals.map(m=>(<div key={m.id} className='bg-stone-700'>
+                    <img src={m.strMealThumb} alt="" />
                 <h1 className='text-2xl'>{m.strMeal}</h1>
                 <p>{m.strCategory}</p>
                 <p>{m.strInstructions.split(" ").slice(0,9).join(" ")}...</p>

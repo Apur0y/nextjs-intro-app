@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
@@ -6,6 +6,10 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const roboto = Roboto({
+  weight:"400"
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.className}`}
       >
         <Navbar></Navbar>
         {children}
