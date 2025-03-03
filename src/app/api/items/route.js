@@ -1,4 +1,5 @@
 import dbConnect from "@/lib/dbConnect"
+import { revalidatePath } from "next/cache"
 
  
 export async function GET() {
@@ -11,7 +12,8 @@ export async function GET() {
 export async function POST(req) {
 
     const postData = await req.json()
-
-  return Response.json({ postData })
+    const res = await dbConnect("items").insertOne(postData)
+   revalidatePath("/items")
+  return Response.json(res)
 }
 
