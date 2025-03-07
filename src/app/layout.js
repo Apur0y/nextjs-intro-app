@@ -8,7 +8,8 @@ const geistSans = Geist({
 });
 
 const roboto = Roboto({
-  weight:"400"
+  weight:"400",
+  subsets: ["latin"],
 })
 
 const geistMono = Geist_Mono({

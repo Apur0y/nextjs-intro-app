@@ -1,10 +1,12 @@
 import Link from "next/link";
 import React from "react";
 
+
+export const dynamic = "force-dynamic";
+
+
 const GetItems = async () => {
-  const res = await fetch("http://localhost:3000/api/items",{
-    cache: "force-cache"
-  });
+  const res = await fetch("http://localhost:3000/api/items");
   const data = await res.json();
 
   return (

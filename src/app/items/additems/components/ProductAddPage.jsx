@@ -23,6 +23,7 @@ const ProductAddPage = () => {
     const result = await res.json()
     console.log(result);
    router.push("/items")
+   alert("The item is added")
   };
 
   return (

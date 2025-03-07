@@ -9,7 +9,7 @@ const SingleItemPage = async({params}) => {
 
     return (
         <div>
-            Ho ohwo di 
+            HOpe It gonna ok.
         </div>
     );
 };
