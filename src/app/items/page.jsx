@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 
 const GetItems = async () => {
-  const res = await fetch("http://localhost:3000/api/items");
+  const res = await fetch("https://next-app-explore.vercel.app/api/items");
   const data = await res.json();
 
   return (

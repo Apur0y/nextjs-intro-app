@@ -13,7 +13,7 @@ const ProductAddPage = () => {
     const payload = {userName : productName};
     console.log(payload);
 
-    const res = await fetch("http://localhost:3000/api/items",{
+    const res = await fetch("https://next-app-explore.vercel.app/api/items",{
         method: "POST",
         body: JSON.stringify(payload),
         headers:{
