@@ -18,7 +18,7 @@ const GetItems = async () => {
               <h1 className="text-xl font-bold mb-2">
                 {p?.userName || "Anonymous"}
               </h1>
-              <p className="text-sm text-gray-200">{p.userEmail}</p>
+              <p className="text-sm text-gray-200">{p.userEmail || "user@gamil.com"}</p>
               <div className="mt-4">
                 <p className="font-semibold">
                   Genre: <span className="text-gray-100">{p.genre}</span>
